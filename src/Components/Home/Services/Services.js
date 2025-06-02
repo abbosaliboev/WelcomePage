@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -7,8 +7,6 @@ import {
   faRobot,           // AI Training
   faLaptopCode       // Demo Runs
 } from '@fortawesome/free-solid-svg-icons';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import './Service.css';
 
 const achievement = [
@@ -39,15 +37,11 @@ const achievement = [
 ];
 
 const Services = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
-
   return (
     <section id="services">
       <Container fluid>
         <Row className="align-items-center">
-          <Col xs={12} md={5} data-aos="fade-right">
+          <Col xs={12} md={5}>
             <div>
               <h3 className="section-title">Our Achievements</h3>
               <p className="p-text">
@@ -59,8 +53,8 @@ const Services = () => {
 
           <Col xs={12} md={7}>
             <Row>
-              {achievement.map((ac, i) => (
-                <Col key={ac.id} xs={12} md={6} className="achieve mb-4" data-aos="zoom-in" data-aos-delay={i * 100}>
+              {achievement.map((ac) => (
+                <Col key={ac.id} xs={12} md={6} className="achieve mb-4">
                   <div className="achievement d-flex align-items-center gap-3">
                     <FontAwesomeIcon icon={ac.icon} className="achieve-icon" />
                     <div>
