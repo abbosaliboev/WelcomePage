@@ -1,5 +1,5 @@
 html{
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 body{
   background-color: #FAFFFD;
@@ -75,8 +75,4 @@ section{
 .global-list li{
   list-style: none;
   margin-bottom: 20px;
-}
-
-[data-scroll-container] {
-  overflow: hidden;
 }
