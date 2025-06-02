@@ -82,14 +82,4 @@ src/
 ├── App.js
 └── index.js
 
-📝 License
-
-This project is for educational and portfolio purposes.
-
-⸻
-
-🎓 Web Software Project – Chungbuk National University
-
----
-
 
