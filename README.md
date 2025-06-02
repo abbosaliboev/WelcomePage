@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+Ajoyib! Unda siz hozir Welcome Page qildingiz va bu sahifa loyihaning kirish (landing) qismi sifatida xizmat qiladi. Quyida sizning GitHub README.md faylingizga moslashtirilgan to‘liq matnni tayyorlab berdim. Bu fayl:
+	•	Welcome sahifani taqdim etadi
+	•	5 ta screenshot uchun joy qoldirilgan
+	•	Texnologiyalar, funksiyalar, va loyiha tavsifi berilgan
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+⸻
 
-## Available Scripts
 
-In the project directory, you can run:
+# 🌐 Welcome Page – Real-Time Safety Monitoring System
 
-### `npm start`
+This project is a **Welcome/Landing Page** for the *Real-Time Safety Monitoring System* web app. It's designed to impress visitors with engaging visuals, structured sections, and smooth scrolling experience using modern web technologies.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🔍 Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The Welcome Page serves as the introduction to our Web Software project. It highlights the purpose of the system, our achievements, and available pricing packages. This page sets the tone for user interaction and engagement.
 
-### `npm test`
+## ✨ Key Sections
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🔵 **Banner** – Hero section with animated heading and image
+- 🧩 **About** – Summary of what we do with custom cards
+- 🏆 **Services** – Achievements with icons and animated layout
+- 💰 **Pricing** – Tiered plans for potential clients
+- 📬 **Contact** – Newsletter form and footer with social links
 
-### `npm run build`
+## 🧑‍💻 Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React.js** (Component-based architecture)
+- **React Router DOM** (Routing)
+- **Bootstrap 5** (Responsive grid and layout)
+- **Font Awesome** (Icons)
+- **Custom CSS** (Styling & transitions)
+- **Locomotive Scroll** (Smooth and animated scrolling)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📸 Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> 📂 Place your screenshots inside `/screenshots` folder.
 
-### `npm run eject`
+### 1. 🖼 Banner Section  
+![Banner](./screenshots/1.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. 📖 About Section  
+![About](./screenshots/2.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. 🎯 Services Section  
+![Services](./screenshots/3.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 4. 💳 Pricing Section  
+![Pricing](./screenshots/4.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 5. 📞 Contact Section  
+![Contact](./screenshots/5.png)
 
-## Learn More
+## 📁 Folder Structure (Simplified)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+src/
+├── Components/
+│   ├── Home/
+│   │   ├── About/
+│   │   ├── Banner/
+│   │   ├── Contact/
+│   │   ├── Pricing/
+│   │   ├── Services/
+│   │   └── NavBar/
+├── images/
+├── App.js
+└── index.js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔗 How to Run Locally
 
-### Code Splitting
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📬 Contact
 
-### Analyzing the Bundle Size
+If you have any questions or suggestions, feel free to contact us through the contact form on the page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+⸻
 
-### Making a Progressive Web App
+🎓 Web Software Project – Chungbuk National University
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
