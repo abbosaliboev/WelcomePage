@@ -76,3 +76,7 @@ section{
   list-style: none;
   margin-bottom: 20px;
 }
+
+[data-scroll-container] {
+  overflow: hidden;
+}
