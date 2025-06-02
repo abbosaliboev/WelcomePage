@@ -1,38 +1,78 @@
-.App {
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #FAFFFD;
+  overflow-x: hidden;
+}
+p{
+  font-family: "Poppins", sans-serif;
+}
+
+.p-text{
+  color: #8D8D8D;
+  font-weight: 400;
+}
+/* Global Button */
+
+.global-btn {
+  display: inline-block;
   text-align: center;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 10px 25px;
+  color: #fff;
+  font-weight: 500;
+  background: #3163fc;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  outline: none; /* brauzer default konturini olib tashlash */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.global-btn:hover {
+  background: #507bff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.global-btn:focus {
+  box-shadow: 0 0 0 2px rgba(49, 99, 252, 0.4); /* fokusda tashqi yorug'lik */
+  transform: translateY(-1px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* section styles */
+
+section{
+  background-color: #FAFFFD;
+  padding: 80px 50px 0;
+  margin-bottom: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.section-title{
+  font-weight: 600;
+  font-size: 45px;
+  font-family: "Poppins", sans-serif;
 }
+@media screen and (max-width: 768px){
+  .section-title{
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 450px){
+  .section-title{
+    font-size: 27px;
+  }
+}
+/*NavBar Styles */
+ .nav-link:hover, .nav-link:active, .nav-link:focus{
+   font-weight: bold;
+ }
+ .nav-link:last-child{
+   padding: 0;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ /* Global list styles */
+.global-list li{
+  list-style: none;
+  margin-bottom: 20px;
 }

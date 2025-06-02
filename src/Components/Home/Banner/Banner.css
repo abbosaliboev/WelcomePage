@@ -1,0 +1,25 @@
+.heading{
+    font-weight: 600;
+    font-size: 75px;
+    color: #0D052E;
+    font-family: "Poppins", sans-serif;
+}
+.banner{
+    padding: 50px 80px;
+}
+@media screen and (max-width: 768px){
+    .heading{
+        font-size: 55px;
+    }
+}
+@media screen and (max-width: 500px){
+    .heading{
+        font-size: 35px;
+    }
+}  
+@media screen and (max-width: 400px){
+    .heading{
+        font-size: 30px;
+    }
+} 
+
