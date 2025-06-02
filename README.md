@@ -1,9 +1,4 @@
-Ajoyib! Unda siz hozir Welcome Page qildingiz va bu sahifa loyihaning kirish (landing) qismi sifatida xizmat qiladi. Quyida sizning GitHub README.md faylingizga moslashtirilgan to‘liq matnni tayyorlab berdim. Bu fayl:
-	•	Welcome sahifani taqdim etadi
-	•	5 ta screenshot uchun joy qoldirilgan
-	•	Texnologiyalar, funksiyalar, va loyiha tavsifi berilgan
 
-⸻
 
 
 # 🌐 Welcome Page – Real-Time Safety Monitoring System
