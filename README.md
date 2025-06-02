@@ -46,20 +46,50 @@ The Welcome Page serves as the introduction to our Web Software project. It high
 
 
 
-## 🔗 How to Run Locally
-
 ```bash
 git clone https://github.com/abbosaliboev/WelcomePage.git
+
+🚀 How to Run the Project Locally
+
+After cloning, follow these steps to run the project on your local machine:
+
+# 1. Navigate to the project folder
 cd WelcomePage
+
+# 2. Install dependencies
 npm install
+
+# 3. Start the development server
 npm start
 
-📬 Contact
+The project will run on:
+👉 http://localhost:3000
 
-If you have any questions or suggestions, feel free to contact us through the contact form on the page.
+⸻
+
+📁 Folder Structure (Simplified)
+
+src/
+├── Components/
+│   ├── Home/
+│   │   ├── About/
+│   │   ├── Banner/
+│   │   ├── Contact/
+│   │   ├── Pricing/
+│   │   ├── Services/
+│   │   └── NavBar/
+├── images/
+├── App.js
+└── index.js
+
+📝 License
+
+This project is for educational and portfolio purposes.
 
 ⸻
 
 🎓 Web Software Project – Chungbuk National University
+
+---
 
 
