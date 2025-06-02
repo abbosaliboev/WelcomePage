@@ -27,7 +27,6 @@ The Welcome Page serves as the introduction to our Web Software project. It high
 
 ## 📸 Screenshots
 
-> 📂 Place your screenshots inside `/screenshots` folder.
 
 ### 1. 🖼 Banner Section  
 ![Banner](./screenshots/1.png)
