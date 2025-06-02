@@ -1,65 +1,68 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import happy from '../../images/happy.png';
-import complete from '../../images/complete.png';
-import crazy from '../../images/crazy.png';
-import running from '../../images/running.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faEye,             // Live Detection
+  faClock,           // Hours of Development
+  faRobot,           // AI Training
+  faLaptopCode       // Demo Runs
+} from '@fortawesome/free-solid-svg-icons';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Service.css';
 
 const achievement = [
   {
     id: 1,
-    img: happy,
+    icon: faEye,
     num: '700+',
-    des: 'Happy Clients'
+    des: 'Live Detections'
   },
   {
     id: 2,
-    img: complete,
+    icon: faClock,
     num: '140+',
-    des: 'Project Completed'
+    des: 'Hours of Development'
   },
   {
     id: 3,
-    img: crazy,
-    num: ' 25+',
-    des: 'Crazy Minds'
+    icon: faRobot,
+    num: '25+',
+    des: 'AI Training Sessions'
   },
   {
     id: 4,
-    img: running,
+    icon: faLaptopCode,
     num: '75+',
-    des: 'Running Projects'
+    des: 'Demo Runs'
   }
 ];
 
 const Services = () => {
-  const [achievements] = useState(achievement);
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
   return (
     <section id="services">
       <Container fluid>
         <Row className="align-items-center">
-          <Col xs={12} md={5}>
-            <div className="mr-1">
+          <Col xs={12} md={5} data-aos="fade-right">
+            <div>
               <h3 className="section-title">Our Achievements</h3>
               <p className="p-text">
-                It is a long established fact that a reader will be distracted by
-                the readable content of a page when looking at its layout. The
-                point of using Lorem Ipsum is that it has a more-or-less normal
-                distribution of letter.
+                We have successfully built a smart and scalable safety monitoring system.
+                From frontend to AI integration, every part was developed with care and teamwork.
               </p>
             </div>
           </Col>
 
           <Col xs={12} md={7}>
             <Row>
-              {achievements.map(ac => (
-                <Col key={ac.id} xs={12} md={6} className="achieve mb-4">
-                  <div className="achievement d-flex align-items-center">
-                    <div>
-                      <img src={ac.img} alt="" className="img-fluid mr-3" />
-                    </div>
+              {achievement.map((ac, i) => (
+                <Col key={ac.id} xs={12} md={6} className="achieve mb-4" data-aos="zoom-in" data-aos-delay={i * 100}>
+                  <div className="achievement d-flex align-items-center gap-3">
+                    <FontAwesomeIcon icon={ac.icon} className="achieve-icon" />
                     <div>
                       <p className="achieve-num"><strong>{ac.num}</strong></p>
                       <p>{ac.des}</p>

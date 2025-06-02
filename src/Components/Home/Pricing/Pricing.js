@@ -1,89 +1,74 @@
 import React from 'react';
 import './Pricing.css';
 
-const Pricing = () => {
-    return (
-       <>
-        <section className="pricing-container" id="pricing">
-            <h2 className="section-title mb-5 text-center text-light">Choose Your Dedicated Team</h2>
-            <div className="row">
-                <div className="col-12 col-md-4 p-5">
-                    <div class="card p-3">
-                        <div class="card-body">
-                            <div className="text-center">
-                                <h1 class="card-title">$199</h1>
-                                <h6 className="price-tag">For Basic</h6>
-                            </div>
-                            <p class="card-text text-center global-list p-3">
-                                <ul className="pr-4 container-fluid">
-                                    <li><h6>Homepage</h6></li>
-                                    <li><h6>No Inner Page</h6></li>
-                                    <li><h6>Asset file</h6></li>
-                                    <li><h6>Source file</h6></li>
-                                    <li><h6>Free Stock Photos</h6></li>
-                                    <li><h6>10 Days Free Support</h6></li>
-                                    <li><h6>24/7 Support</h6></li>
-                                </ul>
-                            </p>
-                            <div className="pricing-btn">
-                                <button id="" className="global-btn">Order Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-12 col-md-4 p-5">
-                    <div class="card p-3">
-                        <div class="card-body">
-                                <div className="text-center">
-                                    <h1 class="card-title">$399</h1>
-                                    <h6 className="price-tag">For Preferred</h6>
-                                </div>
-                                <p class="card-text text-center global-list p-3">
-                                    <ul className="pr-4 container-fluid">
-                                        <li><h6>Homepage</h6></li>
-                                        <li><h6>4 Inner Pages</h6></li>
-                                        <li><h6>Asset file</h6></li>
-                                        <li><h6>Source file</h6></li>
-                                        <li><h6>Free Stock Photos</h6></li>
-                                        <li><h6>20 Days Free Support</h6></li>
-                                        <li><h6>24/7 Support</h6></li>
-                                    </ul>
-                                </p>
-                                <div className="pricing-btn">
-                                    <button id="" className="global-btn">Order Now</button>
-                                </div>
-                            </div>                                           
-                        </div>
-                </div>
-                <div className="col-12 col-md-4 p-5">
-                    <div class="card p-3">
-                        <div class="card-body">
-                            <div className="text-center">
-                                <h1 class="card-title">$599</h1>
-                                <h6 className="price-tag">For Elite</h6>
-                            </div>
-                            <p class="card-text text-center global-list p-3">
-                                <ul className="pr-4 container-fluid">
-                                    <li><h6>Homepage</h6></li>
-                                    <li><h6>8 Inner Pages</h6></li>
-                                    <li><h6>Asset file</h6></li>
-                                    <li><h6>Source file</h6></li>
-                                    <li><h6>Free Stock Photos</h6></li>
-                                    <li><h6>30 Days Free Support</h6></li>
-                                    <li><h6>24/7 Support</h6></li>
-                                </ul>
-                            </p>
-                            <div className="pricing-btn">
-                                <button id="" className="global-btn">Order Now</button>
-                            </div>
-                        </div>                                
-                    </div>
-                </div>
-            </div>    
+const plans = [
+  {
+    title: 'Basic Plan',
+    price: '$199',
+    features: [
+      'Real-time PPE Detection',
+      '1 Live Camera Feed',
+      'Summary Dashboard',
+      'Basic Report View',
+      '10 Days Free Support',
+      '24/7 Technical Help',
+    ],
+  },
+  {
+    title: 'Pro Plan',
+    price: '$399',
+    features: [
+      'Real-time PPE Detection',
+      'Up to 4 Live Cameras',
+      'Full Dashboard + Reports',
+      'AI Custom Model Upload',
+      '20 Days Free Support',
+      '24/7 Technical Help',
+    ],
+  },
+  {
+    title: 'Enterprise Plan',
+    price: '$599',
+    features: [
+      'Real-time PPE Detection',
+      'Up to 8 Live Cameras',
+      'Advanced Analytics & Exports',
+      'Unlimited Report History',
+      'Priority AI Model Integration',
+      '30 Days Free Support',
+      '24/7 Dedicated Support',
+    ],
+  },
+];
 
-        </section>
-       </>
-    );
+const Pricing = () => {
+  return (
+    <section className="pricing-container" id="pricing">
+      <h2 className="section-title mb-5 text-center">Choose Your Safety Package</h2>
+      <div className="row">
+        {plans.map((plan, idx) => (
+          <div className="col-12 col-md-4 p-4" key={idx}>
+            <div className="card h-100 shadow-sm p-3">
+              <div className="card-body d-flex flex-column justify-content-between">
+                <div className="text-center mb-3">
+                  <h1 className="card-title">{plan.price}</h1>
+                  <h6 className="price-tag">{plan.title}</h6>
+                </div>
+                <ul className="list-unstyled px-3 mb-4">
+                  {plan.features.map((feature, i) => (
+                    <li key={i}><h6>{feature}</h6></li>
+                  ))}
+                </ul>
+                <div className="text-center" href="#pricing">
+                  <button className="global-btn">Choose Plan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 };
 
 export default Pricing;

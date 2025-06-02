@@ -1,18 +1,19 @@
+// About.js
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import aboutImg from '../../images/about.png';
-import experience from '../../images/Experience.png';
-import prototyping from '../../images/Prototyping.png';
-import illustration from '../../images/Illustrating.png';
-import interfaceImg from '../../images/Interface.png';
+import experience from '../../images/2.png';
+import prototyping from '../../images/3.png';
+import illustration from '../../images/4.png';
+import interfaceImg from '../../images/5.png';
 import './About.css';
 
 const aboutCard = [
-  { id: 1, img: experience, title: 'Experience Design' },
-  { id: 2, img: interfaceImg, title: 'Interface Design' },
-  { id: 3, img: prototyping, title: 'Prototyping' },
-  { id: 4, img: illustration, title: 'Illustration' }
+  { id: 1, img: experience, title: 'Live Camera Monitoring', text: 'Watch up to 6 camera feeds in real time directly on the dashboard.' },
+  { id: 2, img: interfaceImg, title: 'PPE Detection with AI', text: 'Our AI detects whether workers are wearing helmets, vests, and gloves.' },
+  { id: 3, img: prototyping, title: ' Violation Reports', text: 'All safety violations are recorded and shown clearly.' },
+  { id: 4, img: illustration, title: 'Flexible AI Integration', text: 'The system supports different AI models.'}
 ];
 
 const About = () => {
@@ -24,7 +25,7 @@ const About = () => {
         <div className="text-center mb-5">
           <h2 className="section-title">What we do</h2>
           <p className="p-text">
-            Our main focus is to make the User Experience very simple and easy. Simplicity is our strength.
+          Our system is designed to make safety monitoring fast, smart, and user-friendly. Simplicity and real-time response are our strengths.
           </p>
         </div>
 
@@ -34,13 +35,16 @@ const About = () => {
             <Col key={ab.id} xs={12} sm={6} md={6} lg={3} className="mb-4">
               <div className="about-cards h-100">
                 <div className="img-top d-flex align-items-center justify-content-center">
-                  <img src={ab.img} alt={ab.title} className="img-fluid" />
+                <img 
+                  src={ab.img} 
+                  alt={ab.title} 
+                  className="img-fluid rounded" 
+                  style={{ height: '80px', objectFit: 'contain' }} 
+                />
                 </div>
-                <div className="text-center card-body">
+                <div className="text-center card-body pt-3">
                   <h5><strong>{ab.title}</strong></h5>
-                  <p className="text-secondary">
-                    The point of using Lorem Ipsum is that it has a more-or-less normal.
-                  </p>
+                  <p className="text-secondary">{ab.text}</p>
                 </div>
               </div>
             </Col>
@@ -54,11 +58,11 @@ const About = () => {
           </Col>
           <Col xs={12} md={6}>
             <div className="pl-md-3">
-              <h2 className="section-title">Stay Running & Project</h2>
+              <h2 className="section-title">Stay Safe & In Control</h2>
               <p className="text-secondary">
-                It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-                of letters.
+                Monitor workplace safety in real time with smart analytics and clear visuals.
+                Track PPE usage, incident trends, and heatmaps — all in one dashboard.
+                Make fast and informed decisions to protect your team.
               </p>
               <Link to="#contact-us">
                 <button className="global-btn mt-3">Contact Us</button>

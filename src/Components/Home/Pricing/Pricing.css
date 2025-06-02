@@ -1,139 +1,121 @@
-.pricing-container{
+/* Pricing container */
+.pricing-container {
     background-position: right;
     margin-bottom: 0;
-}
-
-/* Pricing button style */
-.card:hover .pricing-btn{
-    display: block;
-}
-
-.pricing-btn{
+  }
+  
+  /* Card style */
+  .card {
+    border: 1px solid transparent; /* Prevent shift on hover */
+    box-shadow: 5px 5px 50px #3c8bda66;
+    height: 550px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  .card:hover {
+    border-color: #3da4c9;
+    box-shadow: 5px 5px 50px #3b6bcc81;
+    background-color: #f0f8ff; /* Slight light background on hover */
+  }
+  
+  /* Price amount */
+  .card-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1b7cd7;
+    margin-bottom: 10px;
+  }
+  
+  /* Plan name */
+  .price-tag {
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 1px solid #1b7cd7;
+    padding-bottom: 20px;
+    color: #545454;
+  }
+  
+  /* Hover effect on price-tag */
+  .card:hover .price-tag {
+    border-bottom: none;
+    color: #545454;
+  }
+  
+  /* Feature list */
+  .global-list li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  /* Pricing button */
+  .pricing-btn {
     text-align: center;
     display: none;
-}
-
-.card{
-    border: none;
-    box-shadow: 5px 5px 50px  #1BD7BA;
-    height: 550px;
-}
-
-.card:hover{
-    border: 3px solid #1BD7BA;
-    box-shadow: 5px 5px 50px  #1BD7BA;
-    
-}
-
-.card:hover .price-tag{
-    border-bottom: none;
-}
-
-.price-tag{
-    border-bottom: 1px solid #1BD7BA;
-    padding-bottom: 20px;
-}
-
-
-/* responsive by media query */
-
-@media screen and (max-width: 1024px){
-    .price-tag{
-        border-bottom: 1px solid #1BD7BA;
-        padding-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  .card:hover .pricing-btn {
+    display: block;
+  }
+  
+  /* Responsive media queries */
+  @media screen and (max-width: 1024px) {
+    .card {
+      height: 700px;
     }
-    .card{
-        border: none;
-        box-shadow: 5px 5px 50px  #1BD7BA;
-        height: 700px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card {
+      height: auto;
     }
-}
-
-@media screen and (max-width: 768px){
-    .price-tag{
-        border-bottom: 1px solid #1BD7BA;
-        padding-bottom: 20px;
+  
+    .card-text ul li {
+      text-align: center;
+      padding: 0;
+      margin: 0;
     }
-    .card{
-        border: none;
-        box-shadow: 5px 5px 50px  #1BD7BA;
-        height: 2050px;
+  }
+  
+  @media screen and (max-width: 548px) {
+    .card {
+      height: auto;
     }
-    .card-text ul li p{
-        padding: 0;
-        margin: 0;
-        text-align: center;
+  }
+  
+  @media screen and (max-width: 399px) {
+    .card {
+      box-shadow: 5px 5px 50px #1b79d7;
+      height: auto;
     }
-}
-
-@media screen and (max-width: 548px){
-    .price-tag{
-        border-bottom: 1px solid #1BD7BA;
-        padding-bottom: 20px;
+  
+    .price-tag {
+      border-bottom: 1px solid #1b79d7;
     }
-    .card{
-        border: none;
-        box-shadow: 5px 5px 50px  #1BD7BA;
-        height: 600px;
+  }
+  
+  @media screen and (max-width: 330px) {
+    .card {
+      box-shadow: 5px 5px 50px #1b79d7;
+      height: auto;
     }
-    .card-text ul li p{
-        padding: 0;
-        margin: 0;
-        text-align: center;
+  
+    .price-tag {
+      border-bottom: 1px solid #1b79d7;
     }
-}
-
-
-@media screen and (max-width: 399px){
-    .price-tag{
-        border-bottom: 1px solid #1BD7BA;
-        padding-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 280px) {
+    .card {
+      box-shadow: 5px 5px 50px #1b79d7;
+      height: auto;
     }
-    .card{
-        border: none;
-        box-shadow: 5px 5px 50px  #1BD7BA;
-        height: 650px;
+  
+    .card-text ul li {
+      text-align: center;
+      padding: 0;
+      margin: 0;
     }
-}
-
-@media screen and (max-width: 345px){
-    .price-tag{
-        border-bottom: 1px solid #1BD7BA;
-        padding-bottom: 20px;
-    }
-    .card{
-        border: none;
-        box-shadow: 5px 5px 50px  #1BD7BA;
-        height: 700px;
-    }
-}
-
-@media screen and (max-width: 330px){
-    .price-tag{
-        border-bottom: 1px solid #1BD7BA;
-        padding-bottom: 20px;
-    }
-    .card{
-        border: none;
-        box-shadow: 5px 5px 50px  #1BD7BA;
-        height: 800px;
-    }
-}
-
-@media screen and (max-width: 280px){
-    .price-tag{
-        border-bottom: 1px solid #1BD7BA;
-        padding-bottom: 20px;
-    }
-    .card{
-        border: none;
-        box-shadow: 5px 5px 50px  #1BD7BA;
-        height: 900px;
-    }
-    .card-text ul li p{
-        padding: 0;
-        margin: 0;
-        text-align: center;
-    }
-}
-
+  }
