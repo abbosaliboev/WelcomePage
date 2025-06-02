@@ -49,8 +49,8 @@ The Welcome Page serves as the introduction to our Web Software project. It high
 ## 🔗 How to Run Locally
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/abbosaliboev/WelcomePage.git
+cd WelcomePage
 npm install
 npm start
 
