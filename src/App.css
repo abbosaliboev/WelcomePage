@@ -13,7 +13,8 @@ p{
   color: #8D8D8D;
   font-weight: 400;
 }
-/* Global Button */
+
+/* Global button styles */
 
 .global-btn {
   display: inline-block;
@@ -26,7 +27,7 @@ p{
   background: #3163fc;
   border: none;
   transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-  outline: none; /* brauzer default konturini olib tashlash */
+  outline: none; 
 }
 
 .global-btn:hover {

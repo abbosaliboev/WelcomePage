@@ -6,7 +6,7 @@
   
   /* Card style */
   .card {
-    border: 1px solid transparent; /* Prevent shift on hover */
+    border: 1px solid transparent; 
     box-shadow: 5px 5px 50px #3c8bda66;
     height: 550px;
     transition: all 0.3s ease-in-out;
@@ -16,7 +16,7 @@
   .card:hover {
     border-color: #3da4c9;
     box-shadow: 5px 5px 50px #3b6bcc81;
-    background-color: #f0f8ff; /* Slight light background on hover */
+    background-color: #f0f8ff; 
   }
   
   /* Price amount */
