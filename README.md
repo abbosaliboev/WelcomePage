@@ -44,27 +44,6 @@ The Welcome Page serves as the introduction to our Web Software project. It high
 ### 5. 📞 Contact Section  
 ![Contact](./screenshots/5.png)
 
-
-
-```bash
-git clone https://github.com/abbosaliboev/WelcomePage.git
-
-🚀 How to Run the Project Locally
-
-After cloning, follow these steps to run the project on your local machine:
-
-# 1. Navigate to the project folder
-cd WelcomePage
-
-# 2. Install dependencies
-npm install
-
-# 3. Start the development server
-npm start
-
-The project will run on:
-👉 http://localhost:3000
-
 ⸻
 
 📁 Folder Structure (Simplified)
@@ -82,4 +61,21 @@ src/
 ├── App.js
 └── index.js
 
+⸻
 
+
+```bash
+git clone https://github.com/abbosaliboev/WelcomePage.git
+
+🚀 How to Run the Project Locally
+
+After cloning, follow these steps to run the project on your local machine:
+
+# 1. Navigate to the project folder
+cd WelcomePage
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
+npm start
