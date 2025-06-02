@@ -24,7 +24,6 @@ The Welcome Page serves as the introduction to our Web Software project. It high
 - **Bootstrap 5** (Responsive grid and layout)
 - **Font Awesome** (Icons)
 - **Custom CSS** (Styling & transitions)
-- **Locomotive Scroll** (Smooth and animated scrolling)
 
 ## 📸 Screenshots
 
