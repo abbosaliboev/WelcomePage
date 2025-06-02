@@ -45,37 +45,13 @@ The Welcome Page serves as the introduction to our Web Software project. It high
 ![Contact](./screenshots/5.png)
 
 ⸻
-
-📁 Folder Structure (Simplified)
-
-src/
-├── Components/
-│   ├── Home/
-│   │   ├── About/
-│   │   ├── Banner/
-│   │   ├── Contact/
-│   │   ├── Pricing/
-│   │   ├── Services/
-│   │   └── NavBar/
-├── images/
-├── App.js
-└── index.js
-
-⸻
-
+## 🚀 How to Run the Project Locally
 
 ```bash
 git clone https://github.com/abbosaliboev/WelcomePage.git
 
-🚀 How to Run the Project Locally
-
-After cloning, follow these steps to run the project on your local machine:
-
-# 1. Navigate to the project folder
 cd WelcomePage
 
-# 2. Install dependencies
 npm install
 
-# 3. Start the development server
 npm start
