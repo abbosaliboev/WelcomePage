@@ -44,20 +44,7 @@ The Welcome Page serves as the introduction to our Web Software project. It high
 ### 5. 📞 Contact Section  
 ![Contact](./screenshots/5.png)
 
-## 📁 Folder Structure (Simplified)
 
-src/
-├── Components/
-│   ├── Home/
-│   │   ├── About/
-│   │   ├── Banner/
-│   │   ├── Contact/
-│   │   ├── Pricing/
-│   │   ├── Services/
-│   │   └── NavBar/
-├── images/
-├── App.js
-└── index.js
 
 ## 🔗 How to Run Locally
 
