@@ -1,7 +1,7 @@
 
 
 
-# 🌐 Welcome Page – Real-Time Safety Monitoring System
+# 🌐 Welcome Page (Website Template) – Real-Time Safety Monitoring System
 
 This project is a **Welcome/Landing Page** for the *Real-Time Safety Monitoring System* web app. It's designed to impress visitors with engaging visuals, structured sections, and smooth scrolling experience using modern web technologies.
 
